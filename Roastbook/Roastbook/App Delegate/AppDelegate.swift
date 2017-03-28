@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var userDetail:UserDetail!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let userDetail = Utility.sharedInstance.getUserDetail()
+        if(userDetail == nil)
+        {
+            let loginNavController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginNavigationController")
+            self.window?.rootViewController = loginNavController
+        }
         return true
     }
 
