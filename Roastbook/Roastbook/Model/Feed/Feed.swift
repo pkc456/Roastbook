@@ -9,10 +9,9 @@
 import Foundation
 
 public class Feed {
-    public var song : String?
-    public var url : String?
-    public var artists : String?
-    public var cover_image : String?
+    public var username : String?
+    public var feedText : String?
+//    public var cover_image : String?
     
     /**
      Returns an array of models based on given dictionary.
@@ -46,10 +45,10 @@ public class Feed {
      */
     required public init?(dictionary: NSDictionary) {
         
-        song = dictionary["song"] as? String
-        url = dictionary["url"] as? String
-        artists = dictionary["artists"] as? String
-        cover_image = dictionary["cover_image"] as? String
+        username = dictionary[KKEY_FEED_NAME] as? String
+        feedText = dictionary[KKEY_FEED] as? String
+
+//        cover_image = dictionary["cover_image"] as? String
     }
     
     
@@ -62,10 +61,9 @@ public class Feed {
         
         let dictionary = NSMutableDictionary()
         
-        dictionary.setValue(self.song, forKey: "song")
-        dictionary.setValue(self.url, forKey: "url")
-        dictionary.setValue(self.artists, forKey: "artists")
-        dictionary.setValue(self.cover_image, forKey: "cover_image")
+        dictionary.setValue(self.username, forKey: KKEY_FEED_NAME)
+        dictionary.setValue(self.feedText, forKey: KKEY_FEED)
+//        dictionary.setValue(self.cover_image, forKey: "cover_image")
         
         return dictionary
     }

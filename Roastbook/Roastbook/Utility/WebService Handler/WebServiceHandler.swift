@@ -32,26 +32,5 @@ class WebServiceHandler: NSObject {
         }
     }
     
-    /*
-    // MARK: Fetch music information
-    func getMusicInformation(successBlock:@escaping ( _ result : [MusicInformation]) -> Void,failureBlock:@escaping (_ error:NSError)->Void)
-    {
-        Utility.showLoader()    //Show loader indicator. This loader indicator is created in Utility class without the use of third party
-        let musicInfoUrl = BASE_URL + CokeStudio
-
-        self.apiRequest(method: .get, url: musicInfoUrl) { (finished, response) in
-            if(finished){
-                if let dictionaryPlayout = response{
-                    let musicInformationModelObject = MusicInformationBusinessLayer.sharedInstance.parseArrayJsonData(data: dictionaryPlayout as! NSArray)
-                    successBlock(musicInformationModelObject)
-                }
-                Utility.hideLoader()
-            }else{
-                let error = response as! NSError
-                failureBlock(error)
-                Utility.hideLoader()
-            }
-        }
-    }*/
     
 }

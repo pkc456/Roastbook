@@ -15,3 +15,6 @@ let APP_DELEGATE : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //Keys
 let KKEY_USER_DETAIL = "UserDetail"
 let KKEY_USER_NAME = "User_Name"
+
+let KKEY_FEED = "feed"
+let KKEY_FEED_NAME = "feedName"

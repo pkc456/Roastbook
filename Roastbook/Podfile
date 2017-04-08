@@ -8,4 +8,5 @@ target 'Roastbook' do
   # Pods for Roastbook
 	pod 'Alamofire', '~> 4.0'
 	pod 'AlamofireImage'
+    pod 'Reactions', '~> 1.1.1'
 end

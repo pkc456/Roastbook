@@ -8,19 +8,26 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableviewFeed: UITableView!
     var arrayMusic : Array<Feed>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableviewFeed.rowHeight = UITableViewAutomaticDimension
+        tableviewFeed.estimatedRowHeight = 70.0
+        
+        fetchFeedData()
     }
 
+    private func fetchFeedData(){
+        arrayMusic = FeedBusinessLayer.sharedInstance.getFeedInformationDataArray()
+        tableviewFeed.reloadData()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -29,22 +36,15 @@ class FirstViewController: UIViewController {
 //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var numberOfRow = 0
-        numberOfRow = self.arrayMusic?.count ?? 0
+        let numberOfRow = self.arrayMusic?.count ?? 0
         return numberOfRow
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
         
-        var musicArrayBasedOnTable : Array<Feed>?
-        musicArrayBasedOnTable = self.arrayMusic
-        
-        
-        if musicArrayBasedOnTable != nil && musicArrayBasedOnTable!.count >= indexPath.row
-        {
-            cell.configureCellWithData(musicInformationModelObject: (musicArrayBasedOnTable?[indexPath.row])!)
-        }
+        let curentFeed = arrayMusic?[indexPath.row]
+        cell.configureCellWithData(feedInformationModelObject: curentFeed!)
         
         return cell
     }
