@@ -1,0 +1,6 @@
+framework module Pods_Roastbook {
+  umbrella header "Pods-Roastbook-umbrella.h"
+
+  export *
+  module * { export * }
+}

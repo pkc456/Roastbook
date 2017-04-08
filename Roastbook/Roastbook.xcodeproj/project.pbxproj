@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4E24AE31E8AD86200C501E7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AE21E8AD86200C501E7 /* FirstViewController.swift */; };
+		0052C942027E57CEE8144947 /* Pods_Roastbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1C2FA78EDC508161107956 /* Pods_Roastbook.framework */; };
+		D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33431E98CA4900209013 /* WebServiceHandler.swift */; };
+		D48D33491E98CBFE00209013 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33481E98CBFE00209013 /* Feed.swift */; };
+		D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */; };
+		D48D334F1E98D05100209013 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D334E1E98D05100209013 /* FirstViewController.swift */; };
+		D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33501E98D17100209013 /* FeedTableViewCell.swift */; };
 		D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */; };
 		D4E24AF71E8AE78000C501E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24AF61E8AE77F00C501E7 /* Login.storyboard */; };
 		D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AF91E8AE7DD00C501E7 /* Utility.swift */; };
@@ -16,15 +21,21 @@
 		D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B041E8AED1000C501E7 /* SignInViewController.swift */; };
 		D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B061E8AED2600C501E7 /* SignUpViewController.swift */; };
 		D4E24B0A1E8AF57300C501E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B091E8AF57300C501E7 /* Assets.xcassets */; };
-		D4E24B0D1E8AF58C00C501E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B0C1E8AF58C00C501E7 /* Info.plist */; };
 		D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B0F1E8AF5AD00C501E7 /* AppDelegate.swift */; };
 		D4E24B161E8AF5C600C501E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B121E8AF5C600C501E7 /* LaunchScreen.storyboard */; };
 		D4E24B171E8AF5C600C501E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B141E8AF5C600C501E7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3341CE4D8BA0175480BCE72C /* Pods-Roastbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roastbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook.debug.xcconfig"; sourceTree = "<group>"; };
+		3B1C2FA78EDC508161107956 /* Pods_Roastbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roastbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8B3A7BB73B1ACF8AB65E17 /* Pods-Roastbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roastbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook.release.xcconfig"; sourceTree = "<group>"; };
+		D48D33431E98CA4900209013 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		D48D33481E98CBFE00209013 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBusinessLayer.swift; sourceTree = "<group>"; };
+		D48D334E1E98D05100209013 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D48D33501E98D17100209013 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		D4E24ADD1E8AD86200C501E7 /* Roastbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roastbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4E24AE21E8AD86200C501E7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D4E24AF61E8AE77F00C501E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D4E24AF91E8AE7DD00C501E7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -44,17 +55,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0052C942027E57CEE8144947 /* Pods_Roastbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1511FCB8111DE564D4FA0E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B1C2FA78EDC508161107956 /* Pods_Roastbook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B83FA2FF0D41EA9A05188F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3341CE4D8BA0175480BCE72C /* Pods-Roastbook.debug.xcconfig */,
+				BE8B3A7BB73B1ACF8AB65E17 /* Pods-Roastbook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D48D33421E98CA4900209013 /* WebService Handler */ = {
+			isa = PBXGroup;
+			children = (
+				D48D33431E98CA4900209013 /* WebServiceHandler.swift */,
+			);
+			path = "WebService Handler";
+			sourceTree = "<group>";
+		};
+		D48D33451E98CB8400209013 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D48D33481E98CBFE00209013 /* Feed.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D48D334A1E98CC4900209013 /* Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */,
+			);
+			path = "Business Layer";
+			sourceTree = "<group>";
+		};
+		D48D334D1E98D05100209013 /* Feed View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D48D334E1E98D05100209013 /* FirstViewController.swift */,
+				D48D33501E98D17100209013 /* FeedTableViewCell.swift */,
+			);
+			path = "Feed View Controller";
+			sourceTree = "<group>";
+		};
 		D4E24AD41E8AD86200C501E7 = {
 			isa = PBXGroup;
 			children = (
 				D4E24ADF1E8AD86200C501E7 /* Roastbook */,
 				D4E24ADE1E8AD86200C501E7 /* Products */,
+				9B83FA2FF0D41EA9A05188F9 /* Pods */,
+				1511FCB8111DE564D4FA0E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,12 +133,12 @@
 		D4E24ADF1E8AD86200C501E7 /* Roastbook */ = {
 			isa = PBXGroup;
 			children = (
+				D48D334A1E98CC4900209013 /* Business Layer */,
 				D4E24B0E1E8AF5AD00C501E7 /* App Delegate */,
 				D4E24B011E8AECFF00C501E7 /* View Controller */,
 				D4E24AFB1E8AE80900C501E7 /* Model */,
 				D4E24AF81E8AE7C500C501E7 /* Utility */,
 				D4E24AF41E8AE74500C501E7 /* Resources */,
-				D4E24AE21E8AD86200C501E7 /* FirstViewController.swift */,
 				D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */,
 			);
 			path = Roastbook;
@@ -102,6 +166,7 @@
 		D4E24AF81E8AE7C500C501E7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D48D33421E98CA4900209013 /* WebService Handler */,
 				D4E24AF91E8AE7DD00C501E7 /* Utility.swift */,
 				D4E24AFF1E8AE85600C501E7 /* Constants.swift */,
 			);
@@ -111,6 +176,7 @@
 		D4E24AFB1E8AE80900C501E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D48D33451E98CB8400209013 /* Feed */,
 				D4E24AFC1E8AE80900C501E7 /* User Details */,
 			);
 			path = Model;
@@ -127,6 +193,7 @@
 		D4E24B011E8AECFF00C501E7 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D48D334D1E98D05100209013 /* Feed View Controller */,
 				D4E24B021E8AECFF00C501E7 /* Signin view controller */,
 				D4E24B031E8AECFF00C501E7 /* Signup view controller */,
 			);
@@ -189,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4E24AF11E8AD86200C501E7 /* Build configuration list for PBXNativeTarget "Roastbook" */;
 			buildPhases = (
+				A88698483DE6387452D46934 /* [CP] Check Pods Manifest.lock */,
 				D4E24AD91E8AD86200C501E7 /* Sources */,
 				D4E24ADA1E8AD86200C501E7 /* Frameworks */,
 				D4E24ADB1E8AD86200C501E7 /* Resources */,
+				62EB71E8B5520943D8DF0119 /* [CP] Embed Pods Frameworks */,
+				6EFE6957BA45B3B06100FD05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,12 +314,59 @@
 				D4E24AF71E8AE78000C501E7 /* Login.storyboard in Resources */,
 				D4E24B171E8AF5C600C501E7 /* Main.storyboard in Resources */,
 				D4E24B161E8AF5C600C501E7 /* LaunchScreen.storyboard in Resources */,
-				D4E24B0D1E8AF58C00C501E7 /* Info.plist in Resources */,
 				D4E24B0A1E8AF57300C501E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62EB71E8B5520943D8DF0119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFE6957BA45B3B06100FD05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88698483DE6387452D46934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4E24AD91E8AD86200C501E7 /* Sources */ = {
@@ -257,12 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */,
+				D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */,
+				D48D33491E98CBFE00209013 /* Feed.swift in Sources */,
+				D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */,
+				D48D334F1E98D05100209013 /* FirstViewController.swift in Sources */,
+				D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */,
 				D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */,
 				D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */,
 				D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */,
 				D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */,
 				D4E24AFE1E8AE82F00C501E7 /* UserDetail.swift in Sources */,
-				D4E24AE31E8AD86200C501E7 /* FirstViewController.swift in Sources */,
 				D4E24B001E8AE85600C501E7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +503,9 @@
 		};
 		D4E24AF21E8AD86200C501E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3341CE4D8BA0175480BCE72C /* Pods-Roastbook.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -395,7 +518,9 @@
 		};
 		D4E24AF31E8AD86200C501E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8B3A7BB73B1ACF8AB65E17 /* Pods-Roastbook.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -425,6 +550,7 @@
 				D4E24AF31E8AD86200C501E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
