@@ -58,13 +58,24 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         self.present(alert, animated: true, completion: {
             
         })
-//        let actionSheet = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "Logout", destructiveButtonTitle: nil, otherButtonTitles: "Settings")
-//        actionSheet.show(in: self.view)
     }
     
     
     //MARK: Collection view datasource and delegates
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        switch indexPath.row {
+        case 0: break
+        case 1: break
+        case 2:
+            let mirrorVC = self.storyboard?.instantiateViewController(withIdentifier: "MirrorViewController")
+            self.navigationController?.pushViewController(mirrorVC!, animated: true)
+            break
+        case 3: break
+        case 4: break
+        case 5: break
+        default:
+            break
+        }
      print("did select")
     }
 
