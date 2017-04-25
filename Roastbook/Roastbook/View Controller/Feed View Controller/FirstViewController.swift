@@ -24,8 +24,8 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     private func fetchFeedData(){
         arrayMusic = FeedBusinessLayer.sharedInstance.getFeedInformationDataArray()
         tableviewFeed.reloadData()
-        
     }
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

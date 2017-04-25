@@ -17,6 +17,11 @@
 		D4A23F081EAC53B000E55CEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A23F071EAC53B000E55CEB /* HomeViewController.swift */; };
 		D4A23F0A1EAC54A200E55CEB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A23F091EAC54A200E55CEB /* HomeCollectionViewCell.swift */; };
 		D4A23F0D1EACBD5900E55CEB /* MirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A23F0C1EACBD5900E55CEB /* MirrorViewController.swift */; };
+		D4A3CDE51EAFC036003AB087 /* PininterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE41EAFC036003AB087 /* PininterestLayout.swift */; };
+		D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */; };
+		D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */; };
+		D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */; };
+		D4A3CDEF1EAFC1C9003AB087 /* MirrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */; };
 		D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */; };
 		D4E24AF71E8AE78000C501E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24AF61E8AE77F00C501E7 /* Login.storyboard */; };
 		D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AF91E8AE7DD00C501E7 /* Utility.swift */; };
@@ -43,6 +48,11 @@
 		D4A23F071EAC53B000E55CEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D4A23F091EAC54A200E55CEB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4A23F0C1EACBD5900E55CEB /* MirrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
+		D4A3CDE41EAFC036003AB087 /* PininterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PininterestLayout.swift; sourceTree = "<group>"; };
+		D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
+		D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorCollectionViewCell.swift; sourceTree = "<group>"; };
+		D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorBusinessLayer.swift; sourceTree = "<group>"; };
+		D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorModel.swift; sourceTree = "<group>"; };
 		D4E24ADD1E8AD86200C501E7 /* Roastbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roastbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D4E24AF61E8AE77F00C501E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 		D48D334A1E98CC4900209013 /* Business Layer */ = {
 			isa = PBXGroup;
 			children = (
+				D4A3CDEB1EAFC1AC003AB087 /* Mirror Business Layer */,
 				D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */,
 			);
 			path = "Business Layer";
@@ -133,8 +144,33 @@
 			isa = PBXGroup;
 			children = (
 				D4A23F0C1EACBD5900E55CEB /* MirrorViewController.swift */,
+				D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */,
 			);
 			path = "Mirror view controller";
+			sourceTree = "<group>";
+		};
+		D4A3CDE31EAFC036003AB087 /* Pininterest Layout */ = {
+			isa = PBXGroup;
+			children = (
+				D4A3CDE41EAFC036003AB087 /* PininterestLayout.swift */,
+			);
+			path = "Pininterest Layout";
+			sourceTree = "<group>";
+		};
+		D4A3CDEA1EAFC172003AB087 /* Mirror Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */,
+			);
+			path = "Mirror Model";
+			sourceTree = "<group>";
+		};
+		D4A3CDEB1EAFC1AC003AB087 /* Mirror Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */,
+			);
+			path = "Mirror Business Layer";
 			sourceTree = "<group>";
 		};
 		D4E24AD41E8AD86200C501E7 = {
@@ -145,7 +181,9 @@
 				9B83FA2FF0D41EA9A05188F9 /* Pods */,
 				1511FCB8111DE564D4FA0E24 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		D4E24ADE1E8AD86200C501E7 /* Products */ = {
 			isa = PBXGroup;
@@ -192,6 +230,8 @@
 		D4E24AF81E8AE7C500C501E7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */,
+				D4A3CDE31EAFC036003AB087 /* Pininterest Layout */,
 				D48D33421E98CA4900209013 /* WebService Handler */,
 				D4E24AF91E8AE7DD00C501E7 /* Utility.swift */,
 				D4E24AFF1E8AE85600C501E7 /* Constants.swift */,
@@ -202,6 +242,7 @@
 		D4E24AFB1E8AE80900C501E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4A3CDEA1EAFC172003AB087 /* Mirror Model */,
 				D48D33451E98CB8400209013 /* Feed */,
 				D4E24AFC1E8AE80900C501E7 /* User Details */,
 			);
@@ -403,18 +444,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */,
 				D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */,
 				D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */,
 				D48D33491E98CBFE00209013 /* Feed.swift in Sources */,
 				D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */,
 				D48D334F1E98D05100209013 /* FirstViewController.swift in Sources */,
+				D4A3CDE51EAFC036003AB087 /* PininterestLayout.swift in Sources */,
 				D4A23F0D1EACBD5900E55CEB /* MirrorViewController.swift in Sources */,
+				D4A3CDEF1EAFC1C9003AB087 /* MirrorModel.swift in Sources */,
 				D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */,
+				D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */,
 				D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */,
 				D4A23F0A1EAC54A200E55CEB /* HomeCollectionViewCell.swift in Sources */,
 				D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */,
 				D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */,
 				D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */,
+				D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */,
 				D4E24AFE1E8AE82F00C501E7 /* UserDetail.swift in Sources */,
 				D4A23F081EAC53B000E55CEB /* HomeViewController.swift in Sources */,
 				D4E24B001E8AE85600C501E7 /* Constants.swift in Sources */,
