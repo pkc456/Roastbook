@@ -12,66 +12,77 @@ import AVFoundation
 class MirrorViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,PinterestLayoutDelegate {
   
   @IBOutlet weak var collectionView: UICollectionView!
-  
-  var arrayMirror : Array<MirrorModel>?
-
-//  var photos = MirrorModel.allPhotos()
+  var mirrorObject = MirrorRoot()
+  var arrayMirrors = [MirrorContentItem]()
+  var pageIndex = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    fetchMirrorData()
+    fetchMirrorData(pageIndex: pageIndex,isLoaderShown: true)
     
     if let layout = collectionView?.collectionViewLayout as? PininterestLayout {
       layout.delegate = self
     }
   }
   
-  private func fetchMirrorData(){
-    arrayMirror = MirrorBusinessLayer.sharedInstance.getMirrorModelInformationDataArray()
-    collectionView.reloadData()
+  private func fetchMirrorData(pageIndex:Int, isLoaderShown:Bool){
+    WebServiceHandler.sharedInstance.getMirrorInformation(paginationIndex: pageIndex, isShowLoader: isLoaderShown, successBlock: { (MirrorRoot) in
+      self.mirrorObject = MirrorRoot
+      self.arrayMirrors.append(contentsOf: MirrorRoot.content)
+      
+      DispatchQueue.main.async {
+        let layout : PininterestLayout = self.collectionView.collectionViewLayout as! PininterestLayout
+        layout.invalidateLayout()
+        self.collectionView.reloadData()
+      }
+    }) { (error) in
+      self.showAlert(title: "Error", message: error.localizedDescription)
+
+    }
+
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
-  
+  //MARK: Collection view delegates
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    let numberOfRow = self.arrayMirror?.count ?? 0
-    return numberOfRow
+//    let numberOfRow = self.arrayMirrors?.count ?? 0
+    return self.arrayMirrors.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MirrorCollectionViewCell", for: indexPath)as! MirrorCollectionViewCell
-    cell.layer.borderWidth = 1.0
-    cell.layer.borderColor = UIColor.red.cgColor
-    cell.mirrorModel = arrayMirror?[indexPath.item]
+    
+    cell.mirrorModel = arrayMirrors[indexPath.item]
     return cell
   }
   
   
   func collectionView(collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath: NSIndexPath,
                       withWidth width: CGFloat) -> CGFloat {
-    let mirrorModelObject = arrayMirror?[indexPath.item]
+    let mirrorModelObject = arrayMirrors[indexPath.item]
+    
 //    let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
 //    let rect  = AVMakeRect(aspectRatio: photo.image.size, insideRect: boundingRect)
 //    return rect.size.height
     
     //Calculate height on base of hate percentage
     var minHeight : CGFloat = 100.0
-    guard let value = NumberFormatter().number(from: (mirrorModelObject?.hatePercentage)!)
-      else {
-        return minHeight
-    }
-
-    let hatePercentage = CGFloat(value)
+    let hatePercentage = CGFloat(mirrorModelObject.percentage)
     minHeight = minHeight + hatePercentage
-//    if(minHeight * (hatePercentage/100) > minHeight){
-//      minHeight = minHeight * (hatePercentage/100)
-//    }
     return minHeight
   }
+  
+  public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath){
+    if(arrayMirrors.count-2 == indexPath.row && pageIndex-1 < mirrorObject.totalPages){
+      pageIndex += 1
+      fetchMirrorData(pageIndex: pageIndex,isLoaderShown: false)
+    }
+
+  }
+
 }
 
 

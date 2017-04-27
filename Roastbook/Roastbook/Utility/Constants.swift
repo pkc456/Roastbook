@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 let APP_DELEGATE : AppDelegate = UIApplication.shared.delegate as! AppDelegate
-
+let KPAGINATION_COUNT = "10"
 
 //Keys
 let KKEY_USER_DETAIL = "UserDetail"
@@ -20,6 +20,6 @@ let KKEY_USER_NAME = "User_Name"
 let KKEY_FEED = "feed"
 let KKEY_FEED_NAME = "feedName"
 
-//Mirror model
-let KKEY_MIRROR_CELEBRITY_NAME = "celebrityName"
-let KKEY_MIRROR_HATE_PERCENTAGE = "hatePercentage"
+//WEB SERVICES URL
+let BASE_URL = "http://myproject-pkc456.boxfuse.io:8080/"
+let MIRROR_URL = "user/page/$/limit/" + KPAGINATION_COUNT

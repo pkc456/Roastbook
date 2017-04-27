@@ -13,6 +13,8 @@
 		D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */; };
 		D48D334F1E98D05100209013 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D334E1E98D05100209013 /* FirstViewController.swift */; };
 		D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33501E98D17100209013 /* FeedTableViewCell.swift */; };
+		D49947CD1EB2540400215B2E /* MirrorContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49947CB1EB2540400215B2E /* MirrorContentItem.swift */; };
+		D49947CE1EB2540400215B2E /* MirrorRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49947CC1EB2540400215B2E /* MirrorRoot.swift */; };
 		D4A23F051EAC533B00E55CEB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A23F041EAC533B00E55CEB /* Home.storyboard */; };
 		D4A23F081EAC53B000E55CEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A23F071EAC53B000E55CEB /* HomeViewController.swift */; };
 		D4A23F0A1EAC54A200E55CEB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A23F091EAC54A200E55CEB /* HomeCollectionViewCell.swift */; };
@@ -21,7 +23,6 @@
 		D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */; };
 		D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */; };
 		D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */; };
-		D4A3CDEF1EAFC1C9003AB087 /* MirrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */; };
 		D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */; };
 		D4E24AF71E8AE78000C501E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24AF61E8AE77F00C501E7 /* Login.storyboard */; };
 		D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AF91E8AE7DD00C501E7 /* Utility.swift */; };
@@ -44,6 +45,8 @@
 		D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBusinessLayer.swift; sourceTree = "<group>"; };
 		D48D334E1E98D05100209013 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D48D33501E98D17100209013 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		D49947CB1EB2540400215B2E /* MirrorContentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorContentItem.swift; sourceTree = "<group>"; };
+		D49947CC1EB2540400215B2E /* MirrorRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorRoot.swift; sourceTree = "<group>"; };
 		D4A23F041EAC533B00E55CEB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D4A23F071EAC53B000E55CEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D4A23F091EAC54A200E55CEB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
 		D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorBusinessLayer.swift; sourceTree = "<group>"; };
-		D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorModel.swift; sourceTree = "<group>"; };
 		D4E24ADD1E8AD86200C501E7 /* Roastbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roastbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D4E24AF61E8AE77F00C501E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -160,7 +162,8 @@
 		D4A3CDEA1EAFC172003AB087 /* Mirror Model */ = {
 			isa = PBXGroup;
 			children = (
-				D4A3CDEE1EAFC1C9003AB087 /* MirrorModel.swift */,
+				D49947CB1EB2540400215B2E /* MirrorContentItem.swift */,
+				D49947CC1EB2540400215B2E /* MirrorRoot.swift */,
 			);
 			path = "Mirror Model";
 			sourceTree = "<group>";
@@ -353,8 +356,7 @@
 				TargetAttributes = {
 					D4E24ADC1E8AD86200C501E7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = P6CL3M8X5H;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -444,15 +446,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49947CE1EB2540400215B2E /* MirrorRoot.swift in Sources */,
 				D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */,
 				D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */,
 				D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */,
 				D48D33491E98CBFE00209013 /* Feed.swift in Sources */,
+				D49947CD1EB2540400215B2E /* MirrorContentItem.swift in Sources */,
 				D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */,
 				D48D334F1E98D05100209013 /* FirstViewController.swift in Sources */,
 				D4A3CDE51EAFC036003AB087 /* PininterestLayout.swift in Sources */,
 				D4A23F0D1EACBD5900E55CEB /* MirrorViewController.swift in Sources */,
-				D4A3CDEF1EAFC1C9003AB087 /* MirrorModel.swift in Sources */,
 				D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */,
 				D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */,
 				D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */,
@@ -586,11 +589,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P6CL3M8X5H;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Roastbook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Pendulum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -602,11 +605,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P6CL3M8X5H;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Roastbook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Pendulum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

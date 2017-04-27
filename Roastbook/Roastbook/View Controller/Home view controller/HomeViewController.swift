@@ -65,7 +65,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         switch indexPath.row {
         case 0: break
-        case 1: break
+        case 1:
+          let mirrorVC = self.storyboard?.instantiateViewController(withIdentifier: "MirrorViewController")
+          self.navigationController?.pushViewController(mirrorVC!, animated: true)
+          break
         case 2:
             let mirrorVC = self.storyboard?.instantiateViewController(withIdentifier: "MirrorViewController")
             self.navigationController?.pushViewController(mirrorVC!, animated: true)

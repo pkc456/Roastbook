@@ -23,6 +23,11 @@ class PininterestLayout: UICollectionViewLayout {
     let insets = collectionView!.contentInset
     return (collectionView?.bounds.width)! - (insets.left + insets.right)
   }
+
+  override func invalidateLayout(){
+    cache.removeAll()
+    super.invalidateLayout()
+  }
   
   //primary objective is to calculate an instance of UICollectionViewLayoutAttributes for every item in the layout.
   override func prepare() {
