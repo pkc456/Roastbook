@@ -60,14 +60,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Associates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="83" translatesAutoresizingMaskIntoConstraints="NO" id="BLW-pW-QU1">
-                                                    <rect key="frame" x="33.5" y="119.5" width="83" height="20.5"/>
+                                                    <rect key="frame" x="34" y="119" width="83" height="21"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-G8-K0w">
-                                                    <rect key="frame" x="111.5" y="109.5" width="30" height="21"/>
+                                                    <rect key="frame" x="112" y="109" width="30" height="21"/>
                                                     <color key="backgroundColor" red="0.2470588235" green="0.67843137249999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Zx4-RZ-5bl"/>
@@ -154,35 +154,48 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Associates" translatesAutoresizingMaskIntoConstraints="NO" id="j39-XY-Ucv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j39-XY-Ucv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="134"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salman khan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="134" translatesAutoresizingMaskIntoConstraints="NO" id="WfD-i1-cYq">
-                                                    <rect key="frame" x="8" y="121.5" width="134" height="20.5"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="134" width="150" height="16"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-zN-0XW">
-                                                    <rect key="frame" x="104" y="8" width="38" height="21"/>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-zN-0XW">
+                                                    <rect key="frame" x="107" y="8" width="35" height="12"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="w7w-mj-rSn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="j39-XY-Ucv" secondAttribute="trailing" id="7K0-uf-lNZ"/>
+                                            <constraint firstItem="WfD-i1-cYq" firstAttribute="top" secondItem="j39-XY-Ucv" secondAttribute="bottom" id="Eav-p8-S7g"/>
                                             <constraint firstItem="j39-XY-Ucv" firstAttribute="top" secondItem="N5Z-1f-7EE" secondAttribute="top" id="Fk2-NK-faJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="WfD-i1-cYq" secondAttribute="trailing" constant="8" id="Nik-Yu-vd4"/>
-                                            <constraint firstAttribute="bottom" secondItem="WfD-i1-cYq" secondAttribute="bottom" constant="8" id="TNj-6F-LDA"/>
+                                            <constraint firstItem="WfD-i1-cYq" firstAttribute="trailing" secondItem="j39-XY-Ucv" secondAttribute="trailing" id="MAh-xP-hZn"/>
+                                            <constraint firstAttribute="bottom" secondItem="WfD-i1-cYq" secondAttribute="bottom" id="TNj-6F-LDA"/>
                                             <constraint firstItem="j39-XY-Ucv" firstAttribute="leading" secondItem="N5Z-1f-7EE" secondAttribute="leading" id="Vzo-GQ-Xwp"/>
-                                            <constraint firstItem="WfD-i1-cYq" firstAttribute="leading" secondItem="N5Z-1f-7EE" secondAttribute="leading" constant="8" id="XZU-qm-hjJ"/>
                                             <constraint firstItem="IVC-zN-0XW" firstAttribute="top" secondItem="N5Z-1f-7EE" secondAttribute="top" constant="8" id="Xly-42-NfW"/>
-                                            <constraint firstAttribute="bottom" secondItem="j39-XY-Ucv" secondAttribute="bottom" id="d5d-iA-dqS"/>
                                             <constraint firstAttribute="trailing" secondItem="IVC-zN-0XW" secondAttribute="trailing" constant="8" id="jII-hZ-TFM"/>
+                                            <constraint firstItem="WfD-i1-cYq" firstAttribute="leading" secondItem="j39-XY-Ucv" secondAttribute="leading" id="lNn-Ss-hcx"/>
                                         </constraints>
                                         <size key="customSize" width="150" height="150"/>
                                         <connections>
@@ -218,7 +231,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Associates" width="196" height="141"/>
         <image name="NavigationDrawer" width="32" height="22"/>
         <image name="Profile" width="295" height="411"/>
     </resources>

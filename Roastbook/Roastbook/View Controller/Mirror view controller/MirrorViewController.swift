@@ -54,8 +54,9 @@ class MirrorViewController: UIViewController,UICollectionViewDelegate,UICollecti
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MirrorCollectionViewCell", for: indexPath)as! MirrorCollectionViewCell
-    
+
     cell.mirrorModel = arrayMirrors[indexPath.item]
+    
     return cell
   }
   

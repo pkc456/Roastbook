@@ -13,7 +13,7 @@ class MirrorCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelCelebrityName: UILabel!
     @IBOutlet weak var labelHatePercentage: UILabel!
-    
+  
     var mirrorModel: MirrorContentItem? {
         didSet {
             if let modelObject = mirrorModel {
