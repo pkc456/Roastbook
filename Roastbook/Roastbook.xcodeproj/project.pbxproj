@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0052C942027E57CEE8144947 /* Pods_Roastbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1C2FA78EDC508161107956 /* Pods_Roastbook.framework */; };
+		D477B5071EB5F33900778DB4 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477B5061EB5F33900778DB4 /* ChapterViewController.swift */; };
 		D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33431E98CA4900209013 /* WebServiceHandler.swift */; };
 		D48D33491E98CBFE00209013 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D33481E98CBFE00209013 /* Feed.swift */; };
 		D48D334C1E98CC5700209013 /* FeedBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */; };
@@ -40,6 +41,7 @@
 		3341CE4D8BA0175480BCE72C /* Pods-Roastbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roastbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook.debug.xcconfig"; sourceTree = "<group>"; };
 		3B1C2FA78EDC508161107956 /* Pods_Roastbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roastbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8B3A7BB73B1ACF8AB65E17 /* Pods-Roastbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roastbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roastbook/Pods-Roastbook.release.xcconfig"; sourceTree = "<group>"; };
+		D477B5061EB5F33900778DB4 /* ChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
 		D48D33431E98CA4900209013 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 		D48D33481E98CBFE00209013 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		D48D334B1E98CC5700209013 /* FeedBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBusinessLayer.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 				BE8B3A7BB73B1ACF8AB65E17 /* Pods-Roastbook.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D477B5051EB5F31300778DB4 /* Chapter view controller */ = {
+			isa = PBXGroup;
+			children = (
+				D477B5061EB5F33900778DB4 /* ChapterViewController.swift */,
+			);
+			path = "Chapter view controller";
 			sourceTree = "<group>";
 		};
 		D48D33421E98CA4900209013 /* WebService Handler */ = {
@@ -263,6 +273,7 @@
 		D4E24B011E8AECFF00C501E7 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D477B5051EB5F31300778DB4 /* Chapter view controller */,
 				D4A23F0B1EACBD4600E55CEB /* Mirror view controller */,
 				D4A23F061EAC539500E55CEB /* Home view controller */,
 				D48D334D1E98D05100209013 /* Feed View Controller */,
@@ -464,6 +475,7 @@
 				D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */,
 				D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */,
 				D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */,
+				D477B5071EB5F33900778DB4 /* ChapterViewController.swift in Sources */,
 				D4E24AFE1E8AE82F00C501E7 /* UserDetail.swift in Sources */,
 				D4A23F081EAC53B000E55CEB /* HomeViewController.swift in Sources */,
 				D4E24B001E8AE85600C501E7 /* Constants.swift in Sources */,

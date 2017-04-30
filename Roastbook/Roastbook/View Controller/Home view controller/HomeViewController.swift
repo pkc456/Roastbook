@@ -73,7 +73,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
             let mirrorVC = self.storyboard?.instantiateViewController(withIdentifier: "MirrorViewController")
             self.navigationController?.pushViewController(mirrorVC!, animated: true)
             break
-        case 3: break
+        case 3:
+          let chapterVC = self.storyboard?.instantiateViewController(withIdentifier: "ChapterViewController")
+          self.navigationController?.pushViewController(chapterVC!, animated: true)
+          break
         case 4: break
         case 5: break
         default:

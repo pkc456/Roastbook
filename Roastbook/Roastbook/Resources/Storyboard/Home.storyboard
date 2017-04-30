@@ -229,6 +229,45 @@
             </objects>
             <point key="canvasLocation" x="1205.5999999999999" y="132.68365817091455"/>
         </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="z2C-pn-IgP">
+            <objects>
+                <viewController storyboardIdentifier="ChapterViewController" id="b93-mc-Z4B" customClass="ChapterViewController" customModule="Roastbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WF1-Yz-1o1"/>
+                        <viewControllerLayoutGuide type="bottom" id="VK3-4G-wMW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LH7-Hv-oaZ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dxv-gT-d9x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b93-mc-Z4B" id="3Sx-cg-K9v"/>
+                                    <outlet property="delegate" destination="b93-mc-Z4B" id="662-4O-Ovm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dxv-gT-d9x" secondAttribute="trailing" id="AL4-Br-SVe"/>
+                            <constraint firstItem="Dxv-gT-d9x" firstAttribute="top" secondItem="WF1-Yz-1o1" secondAttribute="bottom" id="bPl-4X-pYu"/>
+                            <constraint firstItem="VK3-4G-wMW" firstAttribute="top" secondItem="Dxv-gT-d9x" secondAttribute="bottom" id="gaG-Ln-kU6"/>
+                            <constraint firstItem="Dxv-gT-d9x" firstAttribute="leading" secondItem="LH7-Hv-oaZ" secondAttribute="leading" id="mjg-D4-raV"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableviewChapter" destination="Dxv-gT-d9x" id="2jA-4j-k9S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NB6-HZ-Uvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893.5999999999999" y="132.68365817091455"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NavigationDrawer" width="32" height="22"/>
