@@ -16,8 +16,10 @@ class ChapterViewController: UIViewController,UITableViewDelegate,UITableViewDat
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//      tableviewChapter.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
+      self.title = "Chapter"
+      
+      tableviewChapter.rowHeight = UITableViewAutomaticDimension
+      tableviewChapter.estimatedRowHeight = 10.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,11 +29,17 @@ class ChapterViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    let numberOfRow = 10//self.arrayMusic?.count ?? 0
+    let numberOfRow = 1//self.arrayMusic?.count ?? 0
     return numberOfRow
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "ChapterTableViewCell", for: indexPath) as! ChapterTableViewCell
+    
+    return cell
+    
+    
+    /*
     let cell: UITableViewCell = {
       guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) else {
         return UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: identifier)
@@ -44,7 +52,7 @@ class ChapterViewController: UIViewController,UITableViewDelegate,UITableViewDat
     cell.detailTextLabel?.text = "75 %"
     cell.imageView?.image = UIImage(named: "second")
     return cell
-    
+    */
 
   }
   

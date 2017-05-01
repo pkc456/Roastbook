@@ -18,7 +18,7 @@ class MirrorCollectionViewCell: UICollectionViewCell {
         didSet {
             if let modelObject = mirrorModel {
                 labelCelebrityName.text = modelObject.name
-                labelHatePercentage.text = String(modelObject.percentage) + " %"
+                labelHatePercentage.text = String(modelObject.percentage)
               
                 let url: NSURL = NSURL(string: modelObject.imagePath)!
                 imageView.af_setImage(withURL: url as URL)
