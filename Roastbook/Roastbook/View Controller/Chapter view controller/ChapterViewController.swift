@@ -29,12 +29,26 @@ class ChapterViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    let numberOfRow = 1//self.arrayMusic?.count ?? 0
+    let numberOfRow = 3//self.arrayMusic?.count ?? 0
     return numberOfRow
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "ChapterTableViewCell", for: indexPath) as! ChapterTableViewCell
+    var identi = ""
+    
+    switch indexPath.row
+    {
+      case 0:
+        identi = "ChapterTableViewCell"
+      case 1:
+        identi = "ChapterTableViewCell2"
+      case 2:
+        identi = "ChapterTableViewCell3"
+      default:
+        identi = "ChapterTableViewCell"
+    }
+    
+    let cell = tableView.dequeueReusableCell(withIdentifier: identi, for: indexPath) as! ChapterTableViewCell
     
     return cell
     

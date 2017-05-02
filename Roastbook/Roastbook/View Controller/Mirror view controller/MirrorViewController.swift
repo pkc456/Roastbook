@@ -18,6 +18,8 @@ class MirrorViewController: UIViewController,UICollectionViewDelegate,UICollecti
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Mirrors"
+    
     fetchMirrorData(pageIndex: pageIndex,isLoaderShown: true)
     
     if let layout = collectionView?.collectionViewLayout as? PininterestLayout {

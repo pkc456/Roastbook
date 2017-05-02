@@ -20,8 +20,9 @@ class MirrorCollectionViewCell: UICollectionViewCell {
                 labelCelebrityName.text = modelObject.name
                 labelHatePercentage.text = String(modelObject.percentage)
               
-                let url: NSURL = NSURL(string: modelObject.imagePath)!
-                imageView.af_setImage(withURL: url as URL)
+                let url = URL(string: modelObject.imagePath)!
+                let placeholderImage = UIImage(named: "Placeholder")
+                imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
             }
         }
     }        
