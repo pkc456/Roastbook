@@ -25,6 +25,11 @@
 		D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */; };
 		D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */; };
 		D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */; };
+		D4BDC7FF1ED86D31006D3FC6 /* MTZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDC7F61ED86D31006D3FC6 /* MTZButton.m */; };
+		D4BDC8001ED86D31006D3FC6 /* MTZRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDC7F81ED86D31006D3FC6 /* MTZRadialMenu.m */; };
+		D4BDC8011ED86D31006D3FC6 /* MTZRadialMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDC7FA1ED86D31006D3FC6 /* MTZRadialMenuItem.m */; };
+		D4BDC8021ED86D31006D3FC6 /* RadialMenuAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BDC7FE1ED86D31006D3FC6 /* RadialMenuAssets.xcassets */; };
+		D4BDC8031ED93744006D3FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B091E8AF57300C501E7 /* Assets.xcassets */; };
 		D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */; };
 		D4E24AF71E8AE78000C501E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24AF61E8AE77F00C501E7 /* Login.storyboard */; };
 		D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AF91E8AE7DD00C501E7 /* Utility.swift */; };
@@ -32,7 +37,6 @@
 		D4E24B001E8AE85600C501E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24AFF1E8AE85600C501E7 /* Constants.swift */; };
 		D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B041E8AED1000C501E7 /* SignInViewController.swift */; };
 		D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B061E8AED2600C501E7 /* SignUpViewController.swift */; };
-		D4E24B0A1E8AF57300C501E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B091E8AF57300C501E7 /* Assets.xcassets */; };
 		D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E24B0F1E8AF5AD00C501E7 /* AppDelegate.swift */; };
 		D4E24B161E8AF5C600C501E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B121E8AF5C600C501E7 /* LaunchScreen.storyboard */; };
 		D4E24B171E8AF5C600C501E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E24B141E8AF5C600C501E7 /* Main.storyboard */; };
@@ -59,6 +63,16 @@
 		D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
 		D4A3CDE81EAFC135003AB087 /* MirrorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4A3CDEC1EAFC1B9003AB087 /* MirrorBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorBusinessLayer.swift; sourceTree = "<group>"; };
+		D4BDC7F51ED86D31006D3FC6 /* MTZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZButton.h; sourceTree = "<group>"; };
+		D4BDC7F61ED86D31006D3FC6 /* MTZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZButton.m; sourceTree = "<group>"; };
+		D4BDC7F71ED86D31006D3FC6 /* MTZRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZRadialMenu.h; sourceTree = "<group>"; };
+		D4BDC7F81ED86D31006D3FC6 /* MTZRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZRadialMenu.m; sourceTree = "<group>"; };
+		D4BDC7F91ED86D31006D3FC6 /* MTZRadialMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZRadialMenuItem.h; sourceTree = "<group>"; };
+		D4BDC7FA1ED86D31006D3FC6 /* MTZRadialMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZRadialMenuItem.m; sourceTree = "<group>"; };
+		D4BDC7FB1ED86D31006D3FC6 /* MTZRadialMenuItem_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZRadialMenuItem_Private.h; sourceTree = "<group>"; };
+		D4BDC7FC1ED86D31006D3FC6 /* RadialEffect-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RadialEffect-Bridging-Header.h"; sourceTree = "<group>"; };
+		D4BDC7FD1ED86D31006D3FC6 /* RadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialMenu.h; sourceTree = "<group>"; };
+		D4BDC7FE1ED86D31006D3FC6 /* RadialMenuAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RadialMenuAssets.xcassets; sourceTree = "<group>"; };
 		D4E24ADD1E8AD86200C501E7 /* Roastbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roastbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E24AE41E8AD86200C501E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D4E24AF61E8AE77F00C501E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -189,6 +203,23 @@
 			path = "Mirror Business Layer";
 			sourceTree = "<group>";
 		};
+		D4BDC7F41ED86D31006D3FC6 /* Radial menu helper */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDC7F51ED86D31006D3FC6 /* MTZButton.h */,
+				D4BDC7F61ED86D31006D3FC6 /* MTZButton.m */,
+				D4BDC7F71ED86D31006D3FC6 /* MTZRadialMenu.h */,
+				D4BDC7F81ED86D31006D3FC6 /* MTZRadialMenu.m */,
+				D4BDC7F91ED86D31006D3FC6 /* MTZRadialMenuItem.h */,
+				D4BDC7FA1ED86D31006D3FC6 /* MTZRadialMenuItem.m */,
+				D4BDC7FB1ED86D31006D3FC6 /* MTZRadialMenuItem_Private.h */,
+				D4BDC7FC1ED86D31006D3FC6 /* RadialEffect-Bridging-Header.h */,
+				D4BDC7FD1ED86D31006D3FC6 /* RadialMenu.h */,
+				D4BDC7FE1ED86D31006D3FC6 /* RadialMenuAssets.xcassets */,
+			);
+			path = "Radial menu helper";
+			sourceTree = "<group>";
+		};
 		D4E24AD41E8AD86200C501E7 = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +277,7 @@
 		D4E24AF81E8AE7C500C501E7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D4BDC7F41ED86D31006D3FC6 /* Radial menu helper */,
 				D4A3CDE61EAFC056003AB087 /* UIImage+Decompression.swift */,
 				D4A3CDE31EAFC036003AB087 /* Pininterest Layout */,
 				D48D33421E98CA4900209013 /* WebService Handler */,
@@ -402,7 +434,8 @@
 				D4A23F051EAC533B00E55CEB /* Home.storyboard in Resources */,
 				D4E24B171E8AF5C600C501E7 /* Main.storyboard in Resources */,
 				D4E24B161E8AF5C600C501E7 /* LaunchScreen.storyboard in Resources */,
-				D4E24B0A1E8AF57300C501E7 /* Assets.xcassets in Resources */,
+				D4BDC8031ED93744006D3FC6 /* Assets.xcassets in Resources */,
+				D4BDC8021ED86D31006D3FC6 /* RadialMenuAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +497,7 @@
 				D49947CE1EB2540400215B2E /* MirrorRoot.swift in Sources */,
 				D4A3CDE71EAFC056003AB087 /* UIImage+Decompression.swift in Sources */,
 				D4E24B101E8AF5AD00C501E7 /* AppDelegate.swift in Sources */,
+				D4BDC8001ED86D31006D3FC6 /* MTZRadialMenu.m in Sources */,
 				D48D33511E98D17100209013 /* FeedTableViewCell.swift in Sources */,
 				D477B5091EB6020500778DB4 /* ChapterTableViewCell.swift in Sources */,
 				D48D33491E98CBFE00209013 /* Feed.swift in Sources */,
@@ -474,9 +508,11 @@
 				D4A23F0D1EACBD5900E55CEB /* MirrorViewController.swift in Sources */,
 				D48D33441E98CA4900209013 /* WebServiceHandler.swift in Sources */,
 				D4A3CDE91EAFC135003AB087 /* MirrorCollectionViewCell.swift in Sources */,
+				D4BDC7FF1ED86D31006D3FC6 /* MTZButton.m in Sources */,
 				D4E24B051E8AED1000C501E7 /* SignInViewController.swift in Sources */,
 				D4A23F0A1EAC54A200E55CEB /* HomeCollectionViewCell.swift in Sources */,
 				D4E24AFA1E8AE7DD00C501E7 /* Utility.swift in Sources */,
+				D4BDC8011ED86D31006D3FC6 /* MTZRadialMenuItem.m in Sources */,
 				D4E24B071E8AED2600C501E7 /* SignUpViewController.swift in Sources */,
 				D4E24AE51E8AD86200C501E7 /* SecondViewController.swift in Sources */,
 				D4A3CDED1EAFC1B9003AB087 /* MirrorBusinessLayer.swift in Sources */,
@@ -606,14 +642,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6R94A6AQFR;
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Pendulum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b4b9213c-8eab-4771-a4c1-627f4c4c489a";
+				PROVISIONING_PROFILE = "150490ce-547c-4d15-8ba6-fca68daf2fd5";
 				PROVISIONING_PROFILE_SPECIFIER = "Pendulam development profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Projects/Personal/Roastbook/Roastbook/Roastbook/Utility/Radial menu helper/RadialEffect-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -624,15 +662,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6R94A6AQFR;
 				INFOPLIST_FILE = "$(SRCROOT)/Roastbook/Resources/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.Pendulum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c18416fb-3882-4ae8-9224-6b62aeb5e2bb";
-				PROVISIONING_PROFILE_SPECIFIER = "Pendulam app store profile";
+				PROVISIONING_PROFILE = "150490ce-547c-4d15-8ba6-fca68daf2fd5";
+				PROVISIONING_PROFILE_SPECIFIER = "Pendulam development profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Projects/Personal/Roastbook/Roastbook/Roastbook/Utility/Radial menu helper/RadialEffect-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

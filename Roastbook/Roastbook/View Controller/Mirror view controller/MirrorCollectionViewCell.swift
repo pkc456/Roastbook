@@ -14,6 +14,8 @@ class MirrorCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelCelebrityName: UILabel!
     @IBOutlet weak var labelHatePercentage: UILabel!
   
+    @IBOutlet weak var labelNewPost: UILabel!
+    
     var mirrorModel: MirrorContentItem? {
         didSet {
             if let modelObject = mirrorModel {
@@ -23,6 +25,10 @@ class MirrorCollectionViewCell: UICollectionViewCell {
                 let url = URL(string: modelObject.imagePath)!
                 let placeholderImage = UIImage(named: "Placeholder")
                 imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
+              
+              let randomNumber = arc4random_uniform(20) + 2
+              labelNewPost.text = "\(randomNumber) new posts"
+              
             }
         }
     }        

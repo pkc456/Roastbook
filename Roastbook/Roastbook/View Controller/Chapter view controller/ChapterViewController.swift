@@ -15,13 +15,19 @@ class ChapterViewController: UIViewController,UITableViewDelegate,UITableViewDat
 //  var arrayMirrors = [MirrorContentItem]()
   
     override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
       self.title = "Chapter"
+      setUpNavBarButton()
       
       tableviewChapter.rowHeight = UITableViewAutomaticDimension
       tableviewChapter.estimatedRowHeight = 10.0
     }
-
+  
+  private func setUpNavBarButton(){
+    let search = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: nil, action: nil)
+    self.navigationItem.rightBarButtonItem = search
+  }
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

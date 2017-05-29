@@ -19,12 +19,17 @@ class MirrorViewController: UIViewController,UICollectionViewDelegate,UICollecti
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "Mirrors"
-    
+    setUpNavBarButton()
     fetchMirrorData(pageIndex: pageIndex,isLoaderShown: true)
     
     if let layout = collectionView?.collectionViewLayout as? PininterestLayout {
       layout.delegate = self
     }
+  }
+  
+  private func setUpNavBarButton(){
+    let search = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: nil, action: nil)
+    self.navigationItem.rightBarButtonItem = search
   }
   
   private func fetchMirrorData(pageIndex:Int, isLoaderShown:Bool){
